@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  <François Beaufort> -- <Make it Work!> -- <...>
+  <Tyson Kemp> -- <Make it Pretty!> -- <+TysonKemp>
+
+# THANKS
+
+  <Google and the ChromeOS and Device Team>
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JS
