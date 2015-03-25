@@ -96,7 +96,7 @@ td.stable-channel  {
   left: 298px;
   top: 190px;
   z-index: -1;
-  padding-right: 200px;
+  padding-right: 100px;
   padding-bottom: 80px;
 }
 
@@ -170,16 +170,17 @@ td.stable-channel  {
 
 #legend {
   border: 1px solid #444;
-  left: 80px;
   top: 8px;
   font-size: 12px;
   color: #888;
   text-align: center;
-  position: fixed;
+  position: relative;
   z-index: 3;
   width: 18px;
   padding-bottom: 6px;
   padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #legend table {
@@ -197,9 +198,12 @@ td.stable-channel  {
 .arrows {
   -webkit-user-select: none;
   position: fixed;
-  right: 80px;
   top: 159px;
-  z-index: 5;
+  z-index: 9999;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
  }
 
 .arrows span {
@@ -284,4 +288,22 @@ tr.date {
   left: -20px;
   box-shadow: rgb(34, 34, 34) 0px 2px 6px;
   background-color: rgb(51, 51, 51);
+}
+
+#exp {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+#graph {
+  position: fixed;
+  left: 110px;
+  top: 195px;
+  z-index: 9999;
+}
+
+#chromelogo {
+    vertical-align: text-top;
 }

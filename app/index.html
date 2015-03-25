@@ -30,11 +30,19 @@
     <!-- endbuild -->
   </head>
   <body>
-
+    
+    <img id="exp" src="images/app_list_experimental_icon.png">
+    
+    <div class="arrows" style="display:none">
+      <span alt="Hold down to scroll faster" title="Hold down to scroll faster" data-offset="-10">&lt;</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span alt="Hold down to scroll faster" title="Hold down to scroll faster" data-offset="10">&gt;</span>
+    </div>
+    
     <header class="app-bar promote-layer">
       <div class="app-bar-container">
         <button class="menu"><img src="images/hamburger.svg" alt="Menu"></button>
-        <h1 class="logo">ChromeOS Release Timeline</h1>
+        <h1 class="logo">ChromeOS <img id="chromelogo" src="images/chrome-icon-46x46.png"> Release Timeline</h1>
         <section class="app-bar-actions">
         <!-- Put App Bar Buttons Here -->
         </section>
@@ -43,24 +51,28 @@
 
     <nav class="navdrawer-container promote-layer">
       <h4>Navigation</h4>
-      <ul>
-        <li>
+      <!--<ul>-->
+      <!--  <li>-->
           <fieldset id="legend" style="display:none">
             <legend>Legend</legend>
             <table>
               <tr>
-                <td class="dev-channel" data-version="X"></td><td>dev&nbsp;</td>
-                <td class="beta-channel" data-version="X"></td><td>beta&nbsp;</td>
                 <td class="stable-channel" data-version="X"></td><td>stable&nbsp;</td>
+                <td class="beta-channel" data-version="X"></td><td>beta&nbsp;</td>
+                <td class="dev-channel" data-version="X"></td><td>dev&nbsp;</td>
               </tr>
             </table>
           </fieldset>
-        </li>
-      </ul>
+      <!--  </li>-->
+      <!--</ul>-->
     </nav>
+    
     <div id="back"></div>
+    
     <main>
-
+      
+      <img id="graph" src="images/task_manager.png">
+      
       <table id="verDateTable">
         <tbody class="">
           <tr><td id="verDate">Version</td></tr>
@@ -84,13 +96,7 @@
       </table>
 
       <div class="bubble" style="display:none"></div>
-
-      <div class="arrows" style="display:none">
-        <span alt="Hold down to scroll faster" title="Hold down to scroll faster" data-offset="-10">&lt;</span>
-        &nbsp;&nbsp;
-        <span alt="Hold down to scroll faster" title="Hold down to scroll faster" data-offset="10">&gt;</span>
-      </div>
-
+      
     </main>
 
     <!-- build:js scripts/main.min.js -->
