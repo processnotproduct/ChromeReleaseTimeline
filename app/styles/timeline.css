@@ -295,6 +295,7 @@ tr.date {
   right: 0;
   bottom: 0;
   z-index: 9999;
+  opacity: .3;
 }
 
 #graph {
@@ -302,8 +303,10 @@ tr.date {
   left: 110px;
   top: 195px;
   z-index: 9999;
+  opacity: .7;
 }
 
 #chromelogo {
-    vertical-align: text-top;
+  vertical-align: text-top;
+  opacity: .7;
 }
