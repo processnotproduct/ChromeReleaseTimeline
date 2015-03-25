@@ -85,7 +85,8 @@ gulp.task('styles', function () {
   return gulp.src([
       'app/styles/*.scss',
       'app/styles/**/*.css',
-      'app/styles/components/components.scss'
+      'app/styles/*.css'
+      // 'app/styles/components/components.scss'
     ])
     .pipe($.changed('.tmp/styles', {extension: '.css'}))
     .pipe($.if('*.scss', $.rubySass({
@@ -112,8 +113,8 @@ gulp.task('html', function () {
     // the next line to only include styles your project uses.
     .pipe($.if('*.css', $.uncss({
       html: [
-        'app/index.html',
-        'app/styleguide/index.html'
+        'app/index.html'
+        // 'app/styleguide/index.html'
       ],
       // CSS Selectors for UnCSS to ignore
       ignore: [
@@ -128,7 +129,7 @@ gulp.task('html', function () {
     // Update Production Style Guide Paths
     .pipe($.replace('components/components.css', 'components/main.min.css'))
     // Minify Any HTML
-    .pipe($.if('*.html', $.minifyHtml()))
+    .pipe($.if('app/**/*.html', $.minifyHtml()))
     // Output Files
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'html'}));
