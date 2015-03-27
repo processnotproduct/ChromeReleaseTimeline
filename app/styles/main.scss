@@ -11,7 +11,7 @@
  * Visual Style Guide styles
  * Remove if you prefer to use a CSS library, like Bootstrap
  */
-@import 'components/components';
+// @import 'components/components';
 
 html,
 body {
@@ -76,9 +76,6 @@ body.open {
   float: none;
   max-width: none;
   font-weight: 100;
-  /*MAY HAVE TO REMOVE*/
-  display: initial;
-  /*ABOVE*/
 }
 
 .app-bar .logo a {
